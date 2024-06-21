@@ -43,7 +43,7 @@ struct kmem_cache *kmem_cache __ro_after_init;
 /*
  * Merge control. If this is set then no merging of slab caches will occur.
  */
-static bool slab_nomerge __ro_after_init = !IS_ENABLED(CONFIG_SLAB_MERGE_DEFAULT);
+static bool slab_nomerge __ro_after_init = true;
 
 static int __init setup_slab_nomerge(char *str)
 {
